@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chowlink | Fastest Delivery & Easy Pickup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Chowlink home">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 2 31 12 25 31H9L3 12Z" fill="#F2A71B"/><circle cx="17" cy="16" r="5" fill="#fff"/><circle cx="17" cy="16" r="2.2" fill="#F2A71B"/></svg>
+    <span>Chowlink</span>
+  </a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="#home">Home</a>
+    <a href="#foods">Foods</a>
+    <a href="#blog">Blog</a>
+    <a href="#orders">My Orders</a>
+  </nav>
+  <a href="#orders" class="order-btn" id="orderBtn" aria-haspopup="dialog">Order now <span class="badge" id="cartCount">0</span></a>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-left">
+      <p class="tagline"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 0l2.2 9.8L25 13l-9.8 3.2L13 26l-2.2-9.8L1 13l9.8-3.2z"/></svg>
+        <span>Order from kitchens near you, delivered hot to your door or ready for pickup.</span></p>
+      <h1>Fastest Delivery<br>&amp; Easy Pickup</h1>
+      <div class="cta-row">
+        <a href="#foods" class="btn-pill">Get Started</a>
+        <a href="#foods" class="btn-circle" aria-label="Browse foods"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="features">
+        <div class="feat"><span class="ic pink"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-8h5l3 8M9 9H7"/></svg></span>
+          <div><h3>Fast Delivery</h3><p>Your meal leaves the kitchen and reaches you in about 30 minutes.</p></div></div>
+        <div class="feat"><span class="ic dark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg></span>
+          <div><h3>Easy to order</h3><p>Pick a meal, tap add, and pay. Three taps from hunger to checkout.</p></div></div>
+        <div class="feat happy">
+          <div class="avatars" id="heroAvatars"></div>
+          <div><h3>Our happy customers</h3><p class="rating"><span class="star">★</span> 4.9 <span>(4.5k reviews)</span></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="connect">
+        <div class="avatars" id="connectAvatars"></div>
+        <div><strong class="count" data-target="1222250">0</strong><small>PEOPLE CONNECT</small></div>
+      </div>
+
+      <div class="arch" id="arch" role="img" aria-label="Illustration of a smiling Chowlink delivery rider on a yellow scooter"></div>
+      <span class="ring"></span>
+      <span class="pillbar"><i></i><b></b></span>
+      <span class="sticker s1" data-key="pizza" role="img" aria-label="Pizza"></span>
+      <span class="sticker s2" data-key="smoothie" role="img" aria-label="Smoothie"></span>
+
+      <article class="float f1"><img data-food="0" alt=""><div><h4></h4><p>Freshly made, packed hot.</p><span class="price"></span></div></article>
+      <article class="float f2"><img data-food="1" alt=""><div><h4></h4><p>Freshly made, packed hot.</p><span class="price"></span></div></article>
+      <article class="float f3"><img data-food="2" alt=""><div><h4></h4><p>Freshly made, packed hot.</p><span class="price"></span></div></article>
+    </div>
+  </section>
+
+  <section class="foods" id="foods">
+    <div class="sec-head"><h2>Popular on Chowlink</h2></div>
+    <div class="cats" id="cats" aria-label="Browse by category"></div>
+    <div class="filter-bar" id="filterBar" aria-live="polite"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="steps" id="blog">
+    <h2>How Chowlink works</h2>
+    <ol>
+      <li>
+        <div class="art"><svg viewBox="0 0 160 110" aria-hidden="true"><circle cx="30" cy="30" r="6" fill="#F2A71B"/><circle cx="132" cy="80" r="8" fill="#EE8B94"/><rect x="55" y="8" width="50" height="94" rx="10" fill="#0d0d0d"/><rect x="60" y="16" width="40" height="78" rx="5" fill="#fff"/><circle cx="80" cy="40" r="13" fill="#F2A71B"/><rect x="66" y="60" width="28" height="5" rx="2.5" fill="#ddd"/><rect x="66" y="70" width="20" height="5" rx="2.5" fill="#ddd"/><rect x="66" y="80" width="28" height="8" rx="4" fill="#0d0d0d"/></svg></div>
+        <strong>1. Choose</strong><span>Browse meals from kitchens around you.</span></li>
+      <li>
+        <div class="art"><svg viewBox="0 0 160 110" aria-hidden="true"><circle cx="125" cy="28" r="7" fill="#A24BE0"/><circle cx="32" cy="82" r="6" fill="#F2A71B"/><path d="M45 42h70l6 60H39z" fill="#EE8B94"/><path d="M62 42v-8a18 18 0 0 1 36 0v8" fill="none" stroke="#0d0d0d" stroke-width="5"/><circle cx="80" cy="72" r="16" fill="#fff"/><path d="M72 72l6 6 11-12" stroke="#2e9e5b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <strong>2. Order</strong><span>Add to your cart and confirm in one tap.</span></li>
+      <li>
+        <div class="art"><svg viewBox="0 0 160 110" aria-hidden="true"><path d="M8 98h144" stroke="#ccc" stroke-width="3" stroke-dasharray="6 6"/><circle cx="45" cy="84" r="14" fill="#0d0d0d"/><circle cx="115" cy="84" r="14" fill="#0d0d0d"/><circle cx="45" cy="84" r="5" fill="#ddd"/><circle cx="115" cy="84" r="5" fill="#ddd"/><path d="M45 84h30l10-30h12l8 30z" fill="#F5C518"/><rect x="40" y="36" width="34" height="28" rx="4" fill="#A24BE0"/><path d="M95 54l-6-18" stroke="#0d0d0d" stroke-width="5" stroke-linecap="round"/><path d="M10 40h18M4 52h14" stroke="#F2A71B" stroke-width="4" stroke-linecap="round"/></svg></div>
+        <strong>3. Receive</strong><span>A rider brings it over, or you collect it yourself.</span></li>
+    </ol>
+  </section>
+
+  <section class="track">
+    <div>
+      <h2>Watch your meal arrive, live</h2>
+      <p>Follow your rider from the kitchen to your door, so you always know when to come outside.</p>
+      <a href="#foods" class="btn-pill">Order now</a>
+    </div>
+    <svg viewBox="0 0 420 260" role="img" aria-label="Map showing a rider travelling from the kitchen to your location">
+      <rect width="420" height="260" rx="22" fill="#EDEBE4"/>
+      <g stroke="#fff" stroke-width="14" stroke-linecap="round" fill="none"><path d="M-10 70H430"/><path d="M-10 190H430"/><path d="M110 -10V270"/><path d="M300 -10V270"/></g>
+      <rect x="130" y="90" width="150" height="80" rx="10" fill="#cfe8c9"/>
+      <circle cx="170" cy="130" r="12" fill="#a9d6a0"/><circle cx="205" cy="125" r="16" fill="#a9d6a0"/><circle cx="245" cy="135" r="11" fill="#a9d6a0"/>
+      <path class="route" d="M50 190H110V70H300V190H360" fill="none" stroke="#F2A71B" stroke-width="6" stroke-dasharray="4 12" stroke-linecap="round"/>
+      <circle cx="50" cy="190" r="16" fill="#0d0d0d"/><path d="M43 190h14M50 183v14" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(360 178)"><path d="M0 -34a16 16 0 0 1 16 16c0 12-16 30-16 30s-16-18-16-30a16 16 0 0 1 16-16z" fill="#A24BE0"/><circle cy="-18" r="6" fill="#fff"/></g>
+      <circle r="10" fill="#F5C518" stroke="#0d0d0d" stroke-width="3"><animateMotion dur="7s" repeatCount="indefinite" path="M50 190H110V70H300V190H360"/></circle>
+    </svg>
+  </section>
+
+  <section class="reviews">
+    <h2>Loved by hungry people</h2>
+    <div class="rv-grid" id="reviews"></div>
+  </section>
+</main>
+
+<footer id="orders">
+  <div class="logo"><span>Chowlink</span></div>
+  <p>Fast delivery and easy pickup. &copy; <span id="yr"></span> Chowlink.</p>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your order">
+  <header><h2>Your order</h2><button id="closeCart" class="x" aria-label="Close order">&times;</button></header>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot" id="cartFooter" hidden>
+    <div class="total"><span>Total</span><strong id="cartTotal">&#8358;0</strong></div>
+    <button class="pay" id="checkout">Place order</button>
+    <button class="link" id="clearCart">Clear all</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
